@@ -1,0 +1,37 @@
+# ---basic commands---
+# <Enter>    enters child directory or open file
+# <.>        toggle visibility of hidden files
+# <o>        open the file or directory
+# <r>        rename directory
+# <a>        create a new file or directory if '/' appended
+# <x>        cut the files selected
+# <y>        yank (copy) selected files
+# <p>        paste files
+# <d>        trash selected files
+# <D>        delete permanently selected files
+
+# ---tab commands---
+# <t>        create a new tab
+# <Ctrl+C>   close the current tab
+# <n>        n being 1 to 9 and go to the nth tab
+
+# ---copy text---
+# <c->c>    copy file path
+# <c->d>    copy directory path
+# <c->f>    copy file name
+# <c->n>    copy the file name without extension
+
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = "close"
+desc = "Cancel input"
+
+[[manager.prepend_keymap]]
+on   = "<Enter>"
+run  = "plugin smart-enter"
+desc = "Enter the child directory, or open the file"
+
+[[manager.prepend_keymap]]
+on   = "t"
+run  = "plugin smart-tab"
+desc = "Create a tab and enter the hovered directory"

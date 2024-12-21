@@ -1,0 +1,25 @@
+[manager]
+
+sort_dir_first = true
+show_symlink = true
+sort_by = "mtime"
+
+[preview]
+wrap = "yes"
+mage_filter = "nearest"
+
+[opener]
+edit = [
+	{run = 'nvim "$@"', block = true, for = "unix" }
+]
+open = [
+	{run = 'xdg-open "$@"', block = true, for = "unix" }
+]
+
+[open]
+prepend_rules = [
+	{ name = "*.pdf", use = "open" }
+]
+
+[flavor]
+use = "kanagawa"
