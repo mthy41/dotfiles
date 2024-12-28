@@ -1,0 +1,10 @@
+*
+
+!yazi/
+!yazi/**
+!zsh/
+!zsh/**
+!nvim/
+!nvim/**
+!.gitignore
+
