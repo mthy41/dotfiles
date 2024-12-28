@@ -19,9 +19,16 @@ vks("n", "<Esc>", ":nohl<CR>", slnt) -- remove search highlights
 vks("i", "<C-BS>", "<C-w>") -- back delete text with ctrl backspace
 vks("n", "<leader>x", ":ToggleCheckbox<CR>", slnt) -- toggle checkbox
 
--- ================ plugin related ================
+-- ================ plugin related ===============
+
+-- Lazy
+vks({"n", "v"}, "<leader>l", ":Lazy<CR>", slnt)
+
 -- Neogit
 vks({"n", "v"}, "<leader>g", ":<Esc>:Neogit<CR>", slnt) -- open Neogit tab
 
 -- Neotree
 vks({"n", "v"}, "<leader>t", ":NvimTreeToggle<CR>", slnt)
+
+-- Oil
+vks({"n", "v"}, "<leader>o", ":Oil<CR>", slnt)

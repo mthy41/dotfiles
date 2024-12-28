@@ -1,8 +1,9 @@
-local vo = vim.opt
+    local vo = vim.opt
+local vg = vim.g
 
 -- map leader
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vg.mapleader = " "
+vg.maplocalleader = "\\"
 
 -- navigations and number column
 vo.number = true
@@ -25,3 +26,7 @@ vo.breakindent = true
 
 -- others
 vo.ignorecase = true
+
+-- disable netrw (neovim's default directory tree plugin) to futher oil.nvim replacement
+vg.loaded_netrw = 1
+vg.loaded_netrwPlugin = 1
