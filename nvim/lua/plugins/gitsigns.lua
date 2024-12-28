@@ -1,6 +1,10 @@
 return{
     "lewis6991/gitsigns.nvim",
     config = function()
+        -- Setup highlights before calling setup()
+        vim.cmd[[ highlight GitSignsAdd    guifg=#72b043]]
+        vim.cmd[[ highlight GitSignsChange guifg=#f8cc1b]]
+        vim.cmd[[ highlight GitSignsDelete guifg=#e12729]]
         require('gitsigns').setup {
           signs = {
             add          = { text = '┃' },
@@ -33,7 +37,7 @@ return{
             virt_text = true,
             virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
             delay = 1000,
-            ignore_whitespace = false,
+            ignore_whitespace = true,
             virt_text_priority = 100,
             use_focus = true,
           },
