@@ -22,7 +22,7 @@ vks("n", "<leader>x", ":ToggleCheckbox<CR>", slnt) -- toggle checkbox
 -- ================ plugin related ===============
 
 -- Lazy
-vks({"n", "v"}, "<leader>l", ":Lazy<CR>", slnt)
+vks("n", "<leader>l", "<Esc>:Lazy<CR>", slnt)
 
 -- Neogit
 vks({"n", "v"}, "<leader>g", ":<Esc>:Neogit<CR>", slnt) -- open Neogit tab
