@@ -22,7 +22,9 @@ vks("n", "<leader>x", ":ToggleCheckbox<CR>", slnt) -- toggle checkbox
 -- ================ plugin related ===============
 
 -- Lazy
-vks("n", "<leader>l", "<Esc>:Lazy<CR>", slnt)
+vks("n", "<leader>ll", "<Esc>:Lazy<CR>", slnt)
+-- for some reason the l key doesn't work if :source command
+-- is not triggered so must be ll instead
 
 -- Neogit
 vks({"n", "v"}, "<leader>g", ":<Esc>:Neogit<CR>", slnt) -- open Neogit tab
