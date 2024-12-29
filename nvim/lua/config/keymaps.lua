@@ -14,6 +14,17 @@ vks({"v", "x"}, "<leader>y", [["+y]], slnt, nrmap) -- copy to system clipboard
 vks({"v", "x"}, "<leader>p", [["+p]], slnt, nrmap) -- paste from system clipboard (in case Ctrl+Shift+C doesn't work)
 -- vks("v", "<C-S-c>", ":q<CR>", {noremap = true})
 
+-- tab motion
+vks({"n", "i", "v"}, "<C-1>", "<Esc>1gt<CR>", slnt, nrmap) -- goto tab 1
+vks({"n", "i", "v"}, "<C-2>", "<Esc>2gt<CR>", slnt, nrmap) -- goto tab 2
+vks({"n", "i", "v"}, "<C-3>", "<Esc>3gt<CR>", slnt, nrmap) -- goto tab 3
+vks({"n", "i", "v"}, "<C-4>", "<Esc>4gt<CR>", slnt, nrmap) -- goto tab 4
+vks({"n", "i", "v"}, "<C-5>", "<Esc>5gt<CR>", slnt, nrmap) -- goto tab 5
+vks({"n", "i", "v"}, "<C-6>", "<Esc>6gt<CR>", slnt, nrmap) -- goto tab 6
+vks({"n", "i", "v"}, "<C-7>", "<Esc>7gt<CR>", slnt, nrmap) -- goto tab 7
+vks({"n", "i", "v"}, "<C-8>", "<Esc>8gt<CR>", slnt, nrmap) -- goto tab 8
+vks({"n", "i", "v"}, "<C-t>", "<Esc>:tabnew<CR>", slnt, nrmap) -- create a tab
+
 -- outro
 vks("n", "<Esc>", ":nohl<CR>", slnt) -- remove search highlights
 vks("i", "<C-BS>", "<C-w>") -- back delete text with ctrl backspace
