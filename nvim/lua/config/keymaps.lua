@@ -45,3 +45,7 @@ vks({"n", "v"}, "<leader>t", ":NvimTreeToggle<CR>", slnt)
 
 -- Oil
 vks({"n", "v"}, "<leader>o", ":Oil<CR>", slnt)
+
+-- Telescope
+vks({'n', 'v'}, "<leader>ss", ":Telescope<CR>", slnt)
+-- others keymaps are set on the telescope.lua config file

@@ -26,6 +26,10 @@ vo.breakindent = true
 
 -- others
 vo.ignorecase = true
+vo.smartcase = true
+vo.undofile = true
+vo.mouse = 'a' -- enable support for mouse; a is for all modes, i.e. n[ormal] i[nsert] etc.
+vo.showmode = false -- hide the mode line (cause there is lualine already)
 
 -- disable netrw (neovim's default directory tree plugin) to futher oil.nvim replacement
 vg.loaded_netrw = 1
