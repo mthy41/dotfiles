@@ -25,6 +25,10 @@ vks({"n", "i", "v"}, "<C-7>", "<Esc>7gt<CR>", slnt, nrmap) -- goto tab 7
 vks({"n", "i", "v"}, "<C-8>", "<Esc>8gt<CR>", slnt, nrmap) -- goto tab 8
 vks({"n", "i", "v"}, "<C-t>", "<Esc>:tabnew<CR>", slnt, nrmap) -- create a tab
 
+-- horizontal motion
+vks("n", "zl", "10zl", slnt, nrmap) -- scroll horizontally 5 characters to the right
+vks("n", "zh", "10zh", slnt, nrmap) -- scroll horizontally 5 characters to the left
+
 -- outro
 vks("n", "<Esc>", ":nohl<CR>", slnt) -- remove search highlights
 vks("i", "<C-BS>", "<C-w>") -- back delete text with ctrl backspace
