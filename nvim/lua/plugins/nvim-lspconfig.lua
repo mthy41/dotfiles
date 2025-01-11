@@ -3,6 +3,7 @@ return{
 	config = function()
 		require('lspconfig').lua_ls.setup{}
 		require('lspconfig').clangd.setup{}
+        require('lspconfig').pylyzer.setup{}
 		end,
 	lazy = true,
 	dependecies = {"williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim"},

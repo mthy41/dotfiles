@@ -6,5 +6,7 @@
 !zsh/**
 !nvim/
 !nvim/**
+!scripts/
+!scripts/**
 !.gitignore
 
