@@ -1,3 +1,4 @@
+-- https://cmp.saghen.dev/configuration/general.html
 return {
   'saghen/blink.cmp',
   dependencies = 'rafamadriz/friendly-snippets',
@@ -18,23 +19,25 @@ return {
     -- 'super-tab' for mappings similar to vscode (tab to accept, arrow keys to navigate)
     -- 'enter' for mappings similar to 'super-tab' but with 'enter' to accept
     -- See the full "keymap" documentation for information on defining your own keymap.
-
-    -- keymap = {
-    --     preset = 'enter',
-    --     ['<Tab>'] = {'select_next', 'fallback'},
-
-    --     cmdline = {
-    --         preset = 'super-tab',
-    --     },
-    -- },
     keymap = {
         preset = 'enter',
         ['<Tab>'] = {'select_next', 'fallback'},
+        completion = {
+            documentation = {
+                window = { border = vim.g.borderStyle },
+                auto_show = true,
+                auto_show_delay_ms = 500,
+            },
+            ghost_text = {enabled = true},
+        },
     },
     cmdline = {
         keymap = {
             preset = 'super-tab',
         },
+        completion = {
+            menu = { auto_show = true },
+        }
     },
 
 

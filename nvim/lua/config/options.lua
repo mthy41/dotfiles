@@ -1,4 +1,4 @@
-    local vo = vim.opt
+local vo = vim.opt
 local vg = vim.g
 
 -- map leader
@@ -30,6 +30,18 @@ vo.smartcase = true
 vo.undofile = true
 vo.mouse = 'a' -- enable support for mouse; a is for all modes, i.e. n[ormal] i[nsert] etc.
 vo.showmode = false -- hide the mode line (cause there is lualine already)
+
+-- diagnostics
+vim.o.updatetime = 500  -- Time in ms before CursorHold is triggered (default is too long)
+vim.cmd [[autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })]]
+vim.diagnostic.config({
+  virtual_text = false,  -- disables inline messages
+  signs = true,          -- keep gutter signs
+  underline = true,      -- keep squiggly underlines
+  update_in_insert = false,
+  severity_sort = true,
+})
+
 
 -- disable netrw (neovim's default directory tree plugin) to futher oil.nvim replacement
 vg.loaded_netrw = 1

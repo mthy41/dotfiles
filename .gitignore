@@ -1,5 +1,4 @@
 *
-
 !yazi/
 !yazi/**
 !zsh/
@@ -8,5 +7,12 @@
 !nvim/**
 !scripts/
 !scripts/**
+!.tmux/
+!.tmux/**
+!.tmux.config
 !.gitignore
-
+!.tmux.conf
+!tmux/
+!tmux/**
+!kitty/
+!kitty/**

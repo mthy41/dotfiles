@@ -2,6 +2,7 @@
 local vks = vim.keymap.set
 local nrmap = {noremap = true}
 local slnt = {silent = true}
+local opts = { noremap = true, silent = true }
 
 
 -- ==================== general ==================
@@ -33,6 +34,8 @@ vks("n", "zh", "10zh", slnt, nrmap) -- scroll horizontally 5 characters to the l
 vks("n", "<Esc>", ":nohl<CR>", slnt) -- remove search highlights
 vks("i", "<C-BS>", "<C-w>") -- back delete text with ctrl backspace
 vks("n", "<leader>x", ":ToggleCheckbox<CR>", slnt) -- toggle checkbox
+vks("n", "<leader>f", ":lua vim.diagnostic.open_float()<CR>", slnt) -- toggle lsp diagnostics floating window
+vks({"n", "v"}, "<leader>C", ":e ~/.config/nvim/.<CR>", opts)
 
 -- ================ plugin related ===============
 
