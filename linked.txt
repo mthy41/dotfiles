@@ -1,3 +1,3 @@
-.tmux.conf -> .config/.tmux.conf
-.tmux -> .config/.tmux
-.zshrc -> .config/zsh/.zshrc
+~/.tmux.conf -> .config/.tmux.conf
+~/.tmux -> .config/.tmux
+~/.zshrc -> .config/zsh/.zshrc
