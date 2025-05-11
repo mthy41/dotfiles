@@ -1,3 +1,11 @@
+# main opts
+setopt autocd # type a dir to cd
+setopt auto_param_slash
+setopt auto_menu menu_complete
+
+# sources
+source ~/.config/zsh/functions.zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -6,11 +14,11 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="bira"
 
-# zstyle ':omz:update' mode disabled  # disable automatic updates
+zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' frequency 13
 # zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
-zstyle ':omz:update' frequency 13
 
 # in case pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
